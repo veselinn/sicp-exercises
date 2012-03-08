@@ -5,7 +5,7 @@
 
 (define (square x) (* x x))
 
-(define (mix x y) (if (< x y) x y))
+(define (min x y) (if (< x y) x y))
 
 (define (sum-of-squares-of-two-largest x y z) 
   (- (+ (square x) (square y) (square z))
