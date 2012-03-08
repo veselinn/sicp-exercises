@@ -35,12 +35,11 @@
 ; (define (sqrt x)
 ;   (sqrt-iter 1.0 x))
 ;
-; Let's find the square root of 0,004. On the 5th iteration(when the 
+; Let's find the square root of 0,000004. On the 5th iteration(when the 
 ; guess is ~0,312) the good-enough? predicate succeeds, because the 
-; difference between the searched square root and the target parameter
+; difference between the searched square root and the target parameter 
 ; is less than 0,001.
 
-(define (good-enough? guess x)
-  (< (/ (abs (- (square guess) x))
-        guess)
-      1e-12))
+(define (good-enough? guess)
+  (< (abs (- (improve guess) guess))
+      (* guess 0.0001)))
