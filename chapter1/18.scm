@@ -15,5 +15,3 @@
       ((even? b) (fast-*-iter (double a) (halve b) sum))
       (else (fast-*-iter a (- b 1) (+ a sum)))))
   (fast-*-iter a b 0))
-
-(write (fast-* 4 6))
