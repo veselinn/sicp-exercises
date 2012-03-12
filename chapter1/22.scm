@@ -104,5 +104,5 @@
 (timed-prime-test 1000033) ; 1000033 *** 0.086181640625
 (timed-prime-test 1000037) ; 1000037 *** 0.087158203125
 
-; As the measurments suggest the increase is close to (sqrt 10), especially 
-; between 100 000 and 1 000 000.
+; As the measurments suggest the increase is close to (sqrt 10). The 
+; increase gets closer to (sqrt 10) as the number of steps increases.
