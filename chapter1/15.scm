@@ -39,3 +39,6 @@
 ; The space needed is n / 3, which is Θ(n).
 ; The number of steps are (n / 3) * c, where c are the number of steps it 
 ; takes to compute p. The order of growth is Θ(n).
+;
+; The complexity is actually Θ(log n), because at every step the the input 
+; is divided by 3. 
