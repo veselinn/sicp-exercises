@@ -17,11 +17,11 @@
 
 (frac 1))
 
-(+ 2 (cont-frac (lambda (x) 1.0)
+(display (+ 2 (cont-frac (lambda (x) 1.0)
   (lambda (x) 
     (cond
-      ((= 0 (remainder (- x 2) 3)) (quotient x 3))
-      (else 1))) 
-  10))
-; Yeilds 2.382978723404255 
-; Not quite right.
+      ((= 2 (remainder x 3)) (+ (quotient (* x 2) 3) 1))
+      (else 1)))
+  10)))
+
+; Yeilds 2.718283582089552
