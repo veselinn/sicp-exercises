@@ -65,8 +65,8 @@
 (define (branch? x)
   (and (list? x) (number? (car x))))
 
-(define (mobile? x) 
-  (and (list? x) 
+(define (mobile? x)
+  (and (list? x)
     (branch? (left-branch x))
     (branch? (right-branch x))))
 

@@ -23,5 +23,5 @@
 (define one (lambda (f) (lambda (x) (f x))))
 (define two (lambda (f) (lambda (x) (f (f x)))))
 
-(define (add f1 f2) 
+(define (add f1 f2)
   (lambda (f) (lambda (x) ((f2 f) ((f1 f) x)))))

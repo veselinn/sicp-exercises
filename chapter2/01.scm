@@ -5,7 +5,7 @@
 ; and denominator are positive, and if the rational number is nega-
 ; tive, only the numerator is negative.
 
-(define (make-rat n d) 
+(define (make-rat n d)
   (cond
     ((and (> n 0) (> d 0)) (cons n d))
     ((and (< n 0) (< d 0)) (cons (- n) (- d)))
